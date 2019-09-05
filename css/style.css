@@ -8,3 +8,46 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.canvas {
+  cursor: crosshair;
+}
+.sidebar {
+  background-color: #e3e3e3;
+  height: 100%;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+
+}
+.settings {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  justify-content: space-around;
+}
+.toggle-sb {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-panel {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  padding: 5px 8px;
+  border-radius: 5pt 5pt;
+  background-color: white;
+  border-color: white;
+}
+.d-none {
+  display: none;
+}
