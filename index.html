@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Aim Practice</title>
 </head>
@@ -14,14 +15,27 @@
   </canvas>
 
   <nav class="sidebar">
-    <form id="settings" class="settings push">
-      <input type="number" name="" id="speed-input" step="50">
-      <input type="number" name="" id="size-input" step="5">
-      <input type="number" name="" id="targets-input" step="25" min="25" max="100">
-      <input type="color" name="" id="color-input">
-      <div class="btn-panel">
-        <button form="settings" id="start" class="btn">START</button>
-        <button form="settings" id="stop" class="btn">STOP</button>
+    <form id="settings" class="settings">
+      <div class="form-group mt-5">
+        <label for="speed-input" class="">Speed (ms):</label>
+        <input id="speed-input" class="form-control" type="number" step="50">
+      </div>
+      <div class="form-group mt-3">
+        <label for="targets-input" class="">Targets:</label>
+        <input id="targets-input" class="form-control" type="number" step="25" min="25" max="100">
+      </div>
+      <div class="form-group mt-3">
+        <label for="size-input" class="">Target size:</label>
+        <input id="size-input" class="form-control" type="number" step="5">
+      </div>
+      <div class="form-group mt-3">
+        <label for="color-input" class="">Target color:</label>
+        <input type="color" id="color-input" class="form-control colorbox">
+      </div>
+
+      <div class="btn-panel mt-3">
+        <button form="settings" id="start" class="btn btn-success">START</button>
+        <button form="settings" id="stop" class="btn btn-danger">STOP</button>
       </div>
     </form>
     <div id="toggle-sb" class="toggle-sb">

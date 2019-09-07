@@ -29,6 +29,7 @@ let targetCounter = 0
 // stats
 let hitted = 0
 let missed = 0
+let total = 0
 
 // Circle position
 let posx = 0
@@ -59,6 +60,7 @@ function clear() {
 function hitCircle(ev) {
   const clickX = ev.clientX
   const clickY = ev.clientY
+  total++
   if ( (Math.pow(clickX - posx, 2) + Math.pow(clickY - posy, 2)) < Math.pow(radius, 2) ) {
     clear()
     hitted++
@@ -87,9 +89,10 @@ function stopLoop(ev) {
     clearInterval(loop)
     clear()
     targetCounter = 0
-    console.log(`hitted: ${hitted}, missed: ${missed}\nAccuraccy: ${(hitted * 100) / target}%`)
+    console.log(`hitted: ${hitted}, missed: ${missed}\nAccuraccy: ${(hitted * 100) / total}%`)
     hitted = 0
     missed = 0
+    total = 0
   }
 }
 
