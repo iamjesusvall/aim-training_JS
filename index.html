@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sweetalert2.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Aim Practice</title>
 </head>
 <body>
 
-  <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+  <div class="main w-100 h-100 d-flex flex-column justify-content-center align-items-center">
     <canvas id="canvas" class="canvas">
   
     </canvas>
@@ -18,12 +19,16 @@
     <nav class="sidebar">
       <form id="settings" class="settings">
         <div class="form-group mt-5">
-          <label for="speed-input" class="">Speed (ms):</label>
-          <input id="speed-input" class="form-control" type="number" step="50">
+          <label for="delay-input" class="">Delay (ms):</label>
+          <input id="delay-input" class="form-control" type="number" step="50">
+        </div>
+        <div class="form-group mt-3">
+          <label for="duration-input" class="">Duration (ms):</label>
+          <input id="duration-input" class="form-control" type="number" step="50">
         </div>
         <div class="form-group mt-3">
           <label for="targets-input" class="">Targets:</label>
-          <input id="targets-input" class="form-control" type="number" step="25" min="25" max="100">
+          <input id="targets-input" class="form-control" type="number" step="25" min="25" max="150">
         </div>
         <div class="form-group mt-3">
           <label for="size-input" class="">Target size:</label>
@@ -45,7 +50,7 @@
     </nav>
   </div>
   
-
+  <script src="js/sweetalert2.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

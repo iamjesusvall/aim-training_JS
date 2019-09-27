@@ -7,14 +7,18 @@
 body {
   height: 100vh;
   overflow: hidden;
-  background-color: #3e3e3e;
+  background-color: #393e46;
+}
+.main {
+  position: absolute;
 }
 .canvas {
   cursor: crosshair;
-  border: 2px solid white;
+  box-shadow: 1px 1px 15px 15px rgba(35, 41, 49, 0.40);
+  border-radius: 5px 5px;
 }
 .sidebar {
-  background-color: #e3e3e3;
+  background-color: #eeeeee;
   height: 100%;
   z-index: 1000;
   position: absolute;
@@ -50,6 +54,6 @@ body {
 }
 .colorbox {
   padding: 0;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
 }
