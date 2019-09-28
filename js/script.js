@@ -145,7 +145,7 @@ function stopLoop(ev = null) {
       html: `<p class="mt-3 mb-2">Hitted: <strong class="text-success">${hitted}</strong></p>
       <p class="mb-3">Missed: <strong class="text-danger">${missed}</strong></p>`,
       confirmButtonColor: '#5cb85c',
-      
+      allowOutsideClick: false
     })
     hitted = 0
     missed = 0
